@@ -76,15 +76,15 @@ https://sub.xeton.dev subconventer作者提供
 
 https://api.dler.io  lhie1提供
 
-4、添加KV命名空间，名称随意，然后绑定KV命名空间，变量名为SUB_BUCKET，此时便使用路由中的地址访问订阅转换页面
+4、添加KV命名空间，名称随意，然后绑定KV命名空间，变量名为SUB_BUCKET，此时便可使用路由中的地址访问订阅转换页面
 
-其他可选优化：
+##### 其他可选配置：
 
-1、绑定自己域名，使用域名访问订阅转换页面
+5、绑定自己域名，使用域名访问订阅转换页面
 
 如果你有自己的域名且已经在cloudflare激活，你就可以在works中添加一个新的路由，例如sub.example.top/*，之后再cloudflare域名管理中设置dns解析，将你设置的子域名随便解析到一个dns，例如8.8.8.8，此时你就可以使用当前子域名访问订阅转换页面
 
-2、选择自定义订阅转换规则
+6、选择自定义订阅转换规则
 
 再前面的works代码中，有一个变量：const frontendUrl = 'https://raw.githubusercontent.com/bulianglin/psub/main/frontend.html'; 这里便是前端页面地址，你可以将文件上传到自己github仓库，找到label:"universal"，再这里添加自己的订阅转换文件地址，便可使用自定义策略及规则，当然你也可以直接复制地址在web页面粘贴使用
 
